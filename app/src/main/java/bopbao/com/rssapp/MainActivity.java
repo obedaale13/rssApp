@@ -10,6 +10,8 @@ import android.content.ComponentName;
 import android.content.ServiceConnection;
 import android.widget.TextView;
 
+import java.util.Arrays;
+
 import bopbao.com.rssapp.rssService.MyLocalBinder;
 
 
@@ -19,9 +21,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void showString() {
-        String X = getService.getString();
+        String[] X = getService.getString();
+        String x = Arrays.toString(X);
         TextView testView = (TextView) findViewById(R.id.test_text);
-        testView.setText(X);
+        testView.setText(x);
     }
 
     @Override

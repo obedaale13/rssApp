@@ -27,8 +27,8 @@ public class rssService extends Service {
         }
     }
 
-    public String getString (){
-        String test = "Hello";
+    public String[] getString (){
+        String[] test = {"Hello", "this", "is", "my", "test"};
         return test;
     }
 }
